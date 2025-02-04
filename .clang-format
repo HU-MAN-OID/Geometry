@@ -1,0 +1,26 @@
+---
+BasedOnStyle:  WebKit
+AlignAfterOpenBracket: AlwaysBreak
+AllowShortFunctionsOnASingleLine: None
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false
+BinPackParameters: false
+ColumnLimit:     100
+FixNamespaceComments: true
+IncludeBlocks:   Regroup
+IncludeCategories:
+  - Regex:           '^((<|")(gtest|gmock)/)'
+    Priority:        1
+  - Regex:           '^".+\.(h|hh|hpp|hxx)"$'
+    Priority:        2
+  - Regex:           '^<.+\.(h|hh|hpp|hxx)>$'
+    Priority:        3
+  - Regex:           '^<[^.]+>$'
+    Priority:        4
+IncludeIsMainRegex: '(_unittest)?$'
+Cpp11BracedListStyle: true
+NamespaceIndentation: None
+SpaceAfterTemplateKeyword: false
+SpaceBeforeCpp11BracedList: false
+PenaltyReturnTypeOnItsOwnLine: 999
+...
